@@ -9,15 +9,22 @@ class Pokemon
     @db = db
   end
 
-#
-# {Pokemon.new(id: 1, name: "Pikachu", type: "electric", db: @db)}
-  # def self.save(name, type, db)
-  #   db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
-  # end
+  def self.save(name, type, db)
+    db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
+  end
   #
   # def self.find
   #
   # end
 
+
+  describe ".save" do
+    it 'saves an instance of a pokemon with the correct id' do
+      Pokemon.save("Pikachu", "electric", @db)
+
+      pikachu_from_db = @db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
+      expect(pikachu_from_db).to eq([[1, "Pikachu", "electric"]])
+    end
+  end
 
 end
