@@ -9,7 +9,7 @@ class Pokemon
     @db = db
   end
 
-  def self.save(name:, type:, db:)
+  def self.save
     db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
   end
   #
