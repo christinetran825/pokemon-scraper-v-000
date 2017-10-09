@@ -20,8 +20,8 @@ class Pokemon
   end
 
   def alter_hp(hp, db)
-    
-    
+    the_pokemon = db.execute("SELECT * FROM pokemon WHERE id = 1", id).flatten
+
   end
 
   # describe "BONUS" do
