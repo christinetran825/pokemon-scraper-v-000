@@ -9,8 +9,8 @@ class Pokemon
     @db = db
   end
 
-
-{Pokemon.new(id: 1, name: "Pikachu", type: "electric", db: @db)}
+#
+# {Pokemon.new(id: 1, name: "Pikachu", type: "electric", db: @db)}
   # def self.save(name, type, db)
   #   db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
   # end
