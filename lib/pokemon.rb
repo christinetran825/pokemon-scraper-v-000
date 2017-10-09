@@ -19,6 +19,11 @@ class Pokemon
     self.new(id: the_pokemon[0], name: the_pokemon[1], type: the_pokemon[2], hp: the_pokemon[3], db: db)
   end
 
+  def alter_hp(hp, db)
+    
+    
+  end
+
   # describe "BONUS" do
   #
   #   before do
