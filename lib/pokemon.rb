@@ -14,7 +14,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-
+    self.save(id, db)
   end
 
   #
